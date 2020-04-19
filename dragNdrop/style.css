@@ -1,0 +1,82 @@
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 400;
+}
+
+.container{
+  width: 100%;
+  min-height: 100vh;
+}
+.wrapper{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 100px 0;
+}
+
+.list-caption{
+  width: calc(25% - 40px);
+  margin: 20px;
+  list-style-type: none;
+  font-weight: bold;
+  color: #0747a6;
+  text-align: center;
+  font-size: 20px;
+}
+.list-cell{
+  width: calc(25% - 40px);
+  margin: 0 20px;
+  min-height: 148px;
+  list-style-type: none;
+  box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, .2);
+  background-color: #f0f2f5;
+  overflow: hidden;
+}
+
+.list-card{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100%;
+  cursor: all-scroll;
+}
+
+.list-card-header{
+  font-weight: bold;
+  padding: 12px 20px;
+  background-color: #0747a6;
+  color: white;
+}
+.list-card-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/*Классы отвечающие за скрытие элемента и подсветка ячейки*/
+
+.hide{
+  display: none;
+}
+
+.hovered{
+  background-color: #d1d8e2;
+}
